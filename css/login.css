@@ -34,7 +34,7 @@ header.section {
 
 .logo--image{
     display: block;
-    background: url("/images/vw-logo.svg") no-repeat;
+    background: url("../images/vw-logo.svg") no-repeat;
     height: 100px;
     background-position: center;
     margin-top: 80px;
