@@ -8,7 +8,7 @@
     background-size: cover;
     position: fixed;
     padding-top: 40px;
-    background: url(/images/bg2.jpg) no-repeat;
+    background: url(../images/bg2.jpg) no-repeat;
     background-position: bottom;
     background-size: cover;
 
@@ -111,7 +111,7 @@
 }
 
 .logo {
-    background: url('/images/vw-logo--white.svg') no-repeat;
+    background: url('../images/vw-logo--white.svg') no-repeat;
     
 }
 
