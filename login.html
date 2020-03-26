@@ -1,43 +1,57 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>로그인</title>
-
+    <title>LOGIN</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/login.css">
 
 </head>
 <body>
 <div class="body__container">
-    <header class="section">
-        <h1 class="logo"> 
-            <a href="#" class="logo--image">VW</a> 
-        </h1>
-        <div class="section">
-            <p class="section--text"> 팡탈출 PROJECT </p>
-            <p class="section--text__sub">K-ESCAPE</p>
+
+    <div class="login-area-container" id="fadeInOut">
+        <div class="login-area">
+
+            <header class="header">
+                <h1 class="header">
+                    <a href="./index.html" class="h-logo logo">VW</a>
+                </h1>
+                <div class="header">
+                    <p class="header--text"> k:escape Project </p>
+                </div>
+            </header>
+
+            <section class="section">
+                <div class="section container">
+                    <form id="login-form" action="post">
+                        <ul class="input--align__center">
+                            <li class="input--align__center">
+                                <input type="text" class="input--text" placeholder="아이디" required>
+                            </li>
+                            <li class="input--align__center">
+                                <input type="password" class="input--text" placeholder="비밀번호" required>
+                            </li>
+                            <li class="input--align__center">
+                                <input type="submit" class="input--submit" id="login" title="로그인" value="로그인" alt="로그인">
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </section>
         </div>
-    </header>
+    </div>
 
-    <section class="container">
-        <div class="content--input">
-            <input class="input--text" type="text" placeholder="아이디">
-            <input class="input--text" type="text" placeholder="비밀번호">
-            <p class="btn-align">
-                <a href="index.html" class="btn btn--primary">이 페이지는 아직 미완성</a>
-            </p>
+    <footer class="footer">
+        <div class="footer container">
+            <ul class="copy-right">
+                <li>Copyright © Var-Well. All Rights Reserved.</li>
+            </ul>
         </div>
-    </section>
+       </footer>
+    
 
-
-        </div>
-
-    </section> 
-    <footer>
-        
-    </footer>
 </div>
 </body>
 </html>
