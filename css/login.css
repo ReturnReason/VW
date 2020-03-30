@@ -8,7 +8,7 @@
     background-size: cover;
     position: fixed;
     padding-top: 40px;
-    background: url(../images/bg2.jpg) no-repeat;
+    background: url(/images/bg2.jpg) no-repeat;
     background-position: bottom;
     background-size: cover;
 
@@ -43,10 +43,10 @@
     min-height: 400px;
     max-height: 500px;
     background: #009Ab7;
-    background: -webkit-linear-gradient(30deg , #009Ab7, rgba(124, 209, 189, 0.5));
-    background: -moz-linear-gradient(30deg , #009Ab7, rgba(124, 209, 189, 0.5));
-    background: -o-linear-gradient(30deg , #009Ab7, rgba(124, 209, 189, 0.5));
-    background: linear-gradient(30deg , #009Ab7, rgba(124, 209, 189, 0.5));
+    background: -webkit-linear-gradient(30deg , #009Ab7, rgba(124, 209, 189, 0.8));
+    background: -moz-linear-gradient(30deg , #009Ab7, rgba(124, 209, 189, 0.8));
+    background: -o-linear-gradient(30deg , #009Ab7, rgba(124, 209, 189, 0.8));
+    background: linear-gradient(30deg , #009Ab7, rgba(124, 209, 189, 0.8));
     border-radius: 20px;
     border: 2px dashed #f3f3f3;
     box-sizing: border-box;
@@ -111,7 +111,7 @@
 }
 
 .logo {
-    background: url('../images/vw-logo--white.svg') no-repeat;
+    background: url('/images/vw-logo--white.svg') no-repeat;
     
 }
 
@@ -120,6 +120,7 @@
     color: #fff;
     margin-top: 10px;
     margin-bottom: 35px;
+    font-weight: 600;
 }
 
 
@@ -142,6 +143,11 @@
     margin-top: 12px;
     font-size: 18px;
 }
+
+div.section.footer{
+    margin-bottom: 20px;
+}
+
 
 /* INPUT TEXT */
 .input--text {
@@ -177,24 +183,23 @@
 }
 
 .input--submit {
-    margin-top: 10px;
-    width: auto;
-    height: 30px;
+    margin-top: 6px;
+    width: 200px;
+    height: 35px;
     cursor: pointer;
-    color: #fff;
+    color: rgb(224, 250, 255);
     font-size: 18px;
     background-color: transparent;
     border-radius: 20px;
-    border : transparent;
+    border : 2px solid #fff;
+    font-weight: 700;
 }
 
-.input--submit:hover{
-    color: rgba(255,255,255,0.5);
-}
 
 .input--align__center .input--submit {
-    margin-top: 20px;
+    margin-top: 10px;
 }
+
 
 
 /* FOOTER */
@@ -218,4 +223,59 @@
     left: 20%;
     right: 20%;
     vertical-align: middle;
+}
+
+/* MEDIA */
+
+@media screen and (max-width : 768px){
+    
+    .login-area {
+        width : 80%;
+        margin-top: 20%;
+        margin-bottom: 20%;
+    }
+    
+
+    div.section.footer{
+        display: none;
+    }
+
+    .footer{
+        bottom: 20%;
+    }
+
+    footer.container{
+        height: 30%;
+    }
+}
+
+@media screen and (max-width : 321px){
+
+    .login-area {
+        width : 80%;
+        margin-top: 10%;
+        margin-bottom: 20%;
+    }
+
+    .input {
+        width: 180px;
+    }
+
+    div.section.footer{
+        display: none;
+    }
+
+    .footer{
+        bottom: 80%;
+    }
+
+    footer.container{
+        height: 30%;
+    }
+
+    .copy-right{
+        left : 0;
+        right: 0;
+    }
+
 }
