@@ -1,5 +1,9 @@
 
 /* COMMON */
+a{
+    text-decoration: none;
+}
+
 .body__container {
     font-family: 'Nanum Gothic', Arial, Helvetica, sans-serif;
     min-width: 100%;
@@ -110,7 +114,7 @@
 }
 
 .logo {
-    background: url('/images/vw-logo--white.svg') no-repeat;
+    background: url('../images/vw-logo--white.svg') no-repeat;
     
 }
 
@@ -195,10 +199,26 @@ div.section.footer{
 }
 
 
-.input--align__center .input--submit {
-    margin-top: 10px;
+
+/* REGISTER */
+li.register{
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 12px;
+    
 }
 
+.register{
+    color: #fff;
+}
+
+.register:hover{
+    color: rgba(255, 255, 255, 0.637);
+}
+
+.register.missing-id-pw{
+    margin-left: 8px;
+}
 
 
 /* FOOTER */
@@ -222,4 +242,59 @@ div.section.footer{
     left: 20%;
     right: 20%;
     vertical-align: middle;
+}
+
+/* MEDIA */
+
+@media screen and (max-width : 768px){
+    
+    .login-area {
+        width : 80%;
+        margin-top: 20%;
+        margin-bottom: 20%;
+    }
+    
+
+    div.section.footer{
+        display: none;
+    }
+
+    .footer{
+        bottom: 20%;
+    }
+
+    footer.container{
+        height: 30%;
+    }
+}
+
+@media screen and (max-width : 321px){
+
+    .login-area {
+        width : 80%;
+        margin-top: 10%;
+        margin-bottom: 20%;
+    }
+
+    .input {
+        width: 180px;
+    }
+
+    div.section.footer{
+        display: none;
+    }
+
+    .footer{
+        bottom: 80%;
+    }
+
+    footer.container{
+        height: 30%;
+    }
+
+    .copy-right{
+        left : 0;
+        right: 0;
+    }
+
 }
