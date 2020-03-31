@@ -1,4 +1,7 @@
 /* COMMON */
+html {
+    font-family: 'Nanum Gothic','Noto Sans KR','Nanum Gothic Coding', Arial, Helvetica, sans-serif;
+}
 
 a{
     text-decoration: none;
@@ -11,81 +14,89 @@ clearfix {
 
 
 .body__container{
-    background: #009Ab7;
-    background: -webkit-linear-gradient(150deg , #009Ab7, rgb(124, 209, 189));
-    background: -moz-linear-gradient(150deg , #009Ab7, rgb(124, 209, 189));
-    background: -o-linear-gradient(150deg , #009Ab7, rgb(124, 209, 189));
-    background: linear-gradient(150deg , #009Ab7, rgb(124, 209, 189));
+    background: #409dad;
     background-size: cover;
     position: fixed;
     min-width: 100%;
     height: 100%;
 
     font-size : 16px;
-    font-family: 'Nanum Gothic','Noto Sans KR','Nanum Gothic Coding', Arial, Helvetica, sans-serif;
     font-weight: 400;
     color : #333;
+}
+
+.bg__container {
+    background: url(../images/bg-deco00.png) no-repeat;
+    background-position: bottom left;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    padding-bottom: 5%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
 }
 
 
 /* HEADER */
 
 header.section{
-    height: 10px;
-}
-
-header .container{
-    width : 100px;
-    height: 10px;
+    margin-top: 10px;
 }
 
 .logo{
     max-width : 30px;
-    margin-top: 30px;
-    margin-left: 30px;
+    margin-top: 40px;
+    margin-left: 40px;
     
 }
 .logo:hover{
-    
     opacity: 30%;
 }
 
 /* VISUAL */
 
+.section.section--visual{
+    margin : 10px 0;
+}
+
 .section.container{
-    margin-top: 150px;
+    margin-top: 20vh;
 }
 
 .container .sub-title{
-    font-size: 12px;
+    font-size: 16px;
+    margin-bottom: 1.5rem;
     text-align: center;
     color: rgb(250, 253, 255);
     text-shadow: 0 1px 9px rgb(14, 235, 235);
 }
 .page-title {
     font-size: 65px;
-    font-family: 'Pacifico', cursive;
+    font-family: 'Fugaz One', cursive;
     color: rgb(250, 253, 255);
     text-align: center;
     margin-top: 10px;
+    margin-bottom: 10px;
     text-shadow: 0 2px 20px rgb(159, 255, 255);
     text-shadow: 0 1px 30px rgb(14, 235, 235);
 }
 
 .page-title:hover{
-
-    text-shadow: 0 2px 30px rgb(9, 247, 255),0 1px 30px rgba(9, 247, 255,0.5);
+    text-shadow: 0 2px 30px rgb(9, 247, 255),0 1px 10px rgba(9, 247, 255,0.4);
+    
 }
 
 
 .btn-group{
     position: relative;
-
-    margin-top: 120px;
-    height: 20px;
+    margin-top: 8vh;
 }
 .btn-align{
     text-align: center;
+    padding: 5px 0;
 }
 
 .btn--primary {
@@ -109,29 +120,33 @@ header .container{
     text-align: center;
     font-size: 15px;
     font-weight: 500;
-    margin-top: 30px;
+    margin-top: 24px;
 }
 .btn--text:hover{
     color: rgba(255,255,255,0.5);
+    transform: scale(1.1);
 }
 
 /* FOOTER */
-.footer container{
+
+.footer.container{
     position: relative;
     width: 100%;
-    height: 30%;
+    left: 0;
+    bottom: 0;
+    padding-bottom: 5px;
+    position: fixed;
+
 }
 
 .copy-right{
-    color: rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.3);
     text-align: center;
-    font-size: 10px;
-    position: absolute;
+    font-size: 11px;
     bottom: 0;
     left : 25%;
     right:25%;
     margin-bottom: 2%;
-
 
 }
 
@@ -141,7 +156,7 @@ header .container{
 @media screen and (max-width : 1024px){
 
     .section.container{
-        margin-top: 20%;
+        margin-top: 18vh;
     }
     
     .container .sub-title{
@@ -150,6 +165,10 @@ header .container{
 
     .page-title{
         font-size: 70px;
+    }
+
+    .btn-group{
+        margin-top: 10vh;
     }
     footer.container{
         height: 30%;
@@ -167,12 +186,12 @@ header .container{
 @media screen and (max-width : 700px){
 
     .section.container{
-        margin-top: 130px;
+        margin-top: 20vh;
     }
     
     .container .sub-title{
-        font-size: 10px;
-        margin-bottom: 10px;
+        font-size: 14px;
+        margin-bottom: 13px;
     }
 
     .page-title{
@@ -181,12 +200,15 @@ header .container{
     
 
     .btn-group{
-        margin-top: 80px;
+        margin-top: 10vh;
+    }
+    .btn--text{
+        margin-top: 3vh;
     }
 
 
     footer.container{
-        height: 30%;
+        height: 20px;
     }
 
     .copy-right{
@@ -201,12 +223,12 @@ header .container{
 @media screen and (max-width : 450px){
 
     .section.container{
-        margin-top: 37%;
+        margin-top: 23vh;
     }
     
     .container .sub-title{
-        font-size: 10px;
-        margin-bottom: 10px;
+        font-size: 14px;
+        margin-bottom: 15px;
     }
 
     .btn--text{
@@ -215,11 +237,11 @@ header .container{
     }
 
     .page-title{
-        font-size: 40px;
+        font-size: 50px;
     }
 
     .btn-group{
-        margin-top: 80px;
+        margin-top: 10vh;
     }
 
 
@@ -238,26 +260,26 @@ header .container{
 @media screen and (max-width : 320px){
 
     .section.container{
-        margin-top: 35%;
+        margin-top: 20vh;
     }
     
     .container .sub-title{
-        font-size: 10px;
-        margin-bottom: 10px;
+        font-size: 12px;
+        margin-bottom: 14px;
     }
 
     .page-title{
-        font-size: 30px;
+        font-size: 40px;
     }
 
 
     .btn--text{
         font-size: 10px;
-        margin-top: 23px;
+        margin-top: 3.5vh;
     }
 
     .btn-group{
-        margin-top: 70px;
+        margin-top: 8vh;
     }
 
     .btn--primary{
