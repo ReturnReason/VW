@@ -21,6 +21,7 @@ body{
 }
 .body__container::before{
     background: url(../images/bg-deco00.png) no-repeat;
+    background-size: cover;
     height: 100%;
     width: 100%;
     position: absolute;
