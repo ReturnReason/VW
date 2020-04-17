@@ -6,6 +6,7 @@ a{
 
 .body__container {
     font-family: 'Nanum Gothic','Noto Sans KR','Nanum Gothic Coding', Arial, Helvetica, sans-serif;
+    cursor: url(../images/vw-cursor.png), url(../images/vw-cursor.cur), auto; 
     min-width: 100%;
     min-height: 100%;
     background-size: cover;
@@ -23,12 +24,11 @@ a{
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 153, 183, 0.9);
     background: -webkit-linear-gradient(-150deg , #009Ab7, rgba(124, 209, 189,0.2));
     background: -moz-linear-gradient(-150deg , #009Ab7, rgba(124, 209, 189, 0.2));
     background: -o-linear-gradient(-150deg , #009Ab7, rgba(124, 209, 189,0.2));
+    background: rgba(0, 153, 183, 0.9);
     background: linear-gradient(-150deg , #009Ab7, rgba(124, 209, 189, 0.2));
-
     
 }
 
@@ -46,26 +46,29 @@ a{
     min-height: 400px;
     max-height: 500px;
     background: #009Ab7;
-    background: -webkit-linear-gradient(30deg , #009Ab7, rgba(124, 209, 189, 0.8));
-    background: -moz-linear-gradient(30deg , #009Ab7, rgba(124, 209, 189, 0.8));
-    background: -o-linear-gradient(30deg , #009Ab7, rgba(124, 209, 189, 0.8));
-    background: linear-gradient(30deg , #009Ab7, rgba(124, 209, 189, 0.8));
+    background-image: -webkit-linear-gradient(30deg , #009Ab7, rgba(124, 209, 189, 0.8));
+    background-image: -moz-linear-gradient(30deg , #009Ab7, rgba(124, 209, 189, 0.8));
+    background-image: -o-linear-gradient(30deg , #009Ab7, rgba(124, 209, 189, 0.8));
+    background-image: linear-gradient(30deg , #009Ab7, rgba(124, 209, 189, 0.8));
     border-radius: 20px;
     border: 2px dashed #f3f3f3;
     box-sizing: border-box;
     box-shadow: 10px 10px 40px 0 rgba(71, 71, 71, 0.4);
     position: relative;
+
+}
+
+/* ANIMATION */
+
+.fadeinout{
+    animation: fadeinout 2s;
+    -webkit-animation: fadeinout 2s;
+    -moz-animation: fadeinout 2s;
+    -o-animation: fadeinout 2s;
     
 }
 
-#fadeInOut{
-    animation: fadeInOut 2s;
-    -webkit-animation: fadeInOut 2s;
-    -moz-animation: fadeInOut 2s;
-    -o-animation: fadeInOut 2s;
-}
-
-@keyframes fadeInOut {
+@-webkit-keyframes fadeinout {
     0% {
         opacity:0;
     }
@@ -73,7 +76,7 @@ a{
         opacity:1;
     }
 }
-@-webkit-keyframes fadeInOut {
+@-moz-keyframes fadeinout {
     0% {
         opacity:0;
     }
@@ -81,15 +84,7 @@ a{
         opacity:1;
     }
 }
-@-moz-keyframes fadeInOut {
-    0% {
-        opacity:0;
-    }
-    100% {
-        opacity:1;
-    }
-}
-@-o-keyframes fadeInOut {
+@-o-keyframes fadeinout {
     0% {
         opacity:0;
     }
@@ -98,6 +93,14 @@ a{
     }
 }
 
+@keyframes fadeinout {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
 
 /* HEADER */
 .header {
@@ -111,6 +114,7 @@ a{
     display: block;
     text-indent: -9999px;
     margin: 0 auto;
+    
 }
 
 .logo {
@@ -121,7 +125,7 @@ a{
 .header--text {
     text-align: center;
     color: #fff;
-    margin-top: 10px;
+    margin-top: 7px;
     margin-bottom: 35px;
     font-weight: 600;
 }
