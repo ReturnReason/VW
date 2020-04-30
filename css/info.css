@@ -197,7 +197,7 @@ section{
     padding-top: 58px;
     padding-bottom: 59px;
     min-width: 300px;
-
+    min-height: 100%;
     position: relative;
 }
 
@@ -207,7 +207,7 @@ section{
     height: 100px;
     border-radius: 10px;
     margin: 20px auto;
-    box-shadow: 0 .5rem 1rem rgba(157, 165, 173, 0.253);
+    box-shadow: 0 .5rem 1rem rgba(157, 165, 173, 0.13);
 }
 
 @media (min-width: 700px) {
@@ -216,7 +216,7 @@ section{
     }
 }
 
-@media (min-width: 1010px) {
+@media (min-width: 1070px) {
     .content{
         width: 1000px;
         margin-top: 50px;
@@ -241,7 +241,7 @@ section{
     width: 300px;
     margin: 0 auto 20px auto;
     border-radius: 10px;
-    box-shadow: 0 .5rem 1rem rgba(157, 165, 173, 0.253);
+    box-shadow: 0 .5rem 1rem rgba(157, 165, 173, 0.13);
     padding: 15px 0;
 }
 
@@ -305,7 +305,7 @@ section{
     margin : 6px 7px 10px 7px;
     color: #fff;
     border-radius: .6rem;
-    box-shadow: 0 .5rem .7rem rgba(173, 173, 173, 0.219);
+    box-shadow: 0 .5rem .7rem rgba(173, 173, 173, 0.13);
     transition: .3s;
     width: 120px;
 }
@@ -342,7 +342,7 @@ section{
     margin: 20px auto;
     border-radius: .5rem;
     overflow: hidden;
-    box-shadow: 0 .5rem 1rem rgba(157, 165, 173, 0.253);
+    box-shadow: 0 .5rem 1rem rgba(157, 165, 173, 0.13);
 }
 
 .info-table caption{
@@ -371,7 +371,7 @@ section{
     border-bottom: none;
 }
 
-@media (min-width: 1010px) {
+@media (min-width: 1070px) {
 
 
 .card-arrow{
@@ -454,7 +454,7 @@ td:last-child{
         width: 90%;
         margin: 0px auto 25px auto;
         border-radius: 6px;
-        box-shadow: 0 .5rem 1rem rgba(157, 165, 173, 0.253);
+        box-shadow: 0 .5rem 1rem rgba(157, 165, 173, 0.13);
         padding: 15px 0;
     }
 
@@ -465,7 +465,28 @@ td:last-child{
 
 }
 
-@media (min-width: 1010px) {
+@media (min-width: 1070px) {
+
+    .card-background{
+        background-color: rgb(245, 245, 245); 
+        width: 1000px; 
+        height: 200px; 
+        margin: 30px auto 0 auto; 
+        border-radius: 20px; 
+        padding: 10px 20px 5px 20px; 
+        box-shadow: 0 .5rem 1rem rgba(157, 165, 173, 0.13);
+    }
+
+    .card-background-table{
+        background-color: rgb(245, 245, 245); 
+        width: 1000px; 
+        height: auto; 
+        margin: 30px auto 0 auto; 
+        border-radius: 20px; 
+        padding: 10px 20px 5px 20px; 
+        box-shadow: 0 .5rem 1rem rgba(157, 165, 173, 0.13);
+
+    }
 
     .card-container{
         width : 40%;;
@@ -535,12 +556,14 @@ td:last-child{
 
     .info-table tr{
         border-bottom: 1px solid;
-        border-color: #979b9c6c; 
+        border-color: #aaaeaf46; 
     }
 
 
     .info-table tbody tr:nth-child(n+1):hover{
-        background-color: #ccdce23a;
+        background-color: #94c5cc3a;
+        color: rgb(48, 54, 99);
+        font-weight: 700;
     }
 
     .info-table td::before{
@@ -590,6 +613,7 @@ td:last-child{
 
 
 /* FOOTER */
+
 .footer {
     background-color: #94c5cc;
     width: 100%;
@@ -601,6 +625,21 @@ td:last-child{
     left: 0;
     right: 0;
     z-index: 999;
+}
+
+@media (min-width: 1070px) {
+    .footer {
+        background-color: #94c5cc;
+        width: 100%;
+        position: relative;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+    }
 }
 
 .copy-right {
